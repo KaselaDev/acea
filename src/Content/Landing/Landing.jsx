@@ -13,6 +13,7 @@ import Hero from '@/imgs/hero.png'
 import InstagramIcon from '@/imgs/instagramIcon.png'
 import WhatsappIcon from '@/imgs/whatsappIcon.png'
 import FacebookIcon from '@/imgs/facebookIcon.png'
+import TwitterIcon from '@/imgs/twitterIcon.png'
 
 import './styles/landing.css'
 
@@ -87,12 +88,12 @@ export default function Landing() {
             <div className="card">
                 <img src={porqueTeflonar1} alt="Cargando..." />
                 <h3 className="titulo">¿La comida se te pega?</h3>
-                <p className="text">Entendemos lo frustrante que puede ser cuando estás cocinando y la  comida se pega a la sartén. Es una situación que muchos hemos  experimentado: estás en medio de preparar una deliciosa comida y, de  repente, los ingredientes se adhieren a la superficie de la olla o  sartén, complicando el proceso de cocción y aumentando el trabajo de  limpieza. Además, esto puede arruinar tus platos y hacer que la  experiencia culinaria sea menos placentera.</p>
+                <p className="text">Entendemos lo frustrante que puede ser cuando estás cocinando y la  comida se pega a la sartén. Es una situación que muchos hemos  experimentado: estás en medio de preparar una deliciosa comida y, de  repente, los ingredientes se adhieren a la superficie de la olla o  sartén, complicando el proceso de cocción y aumentando el trabajo de  limpieza.</p>
             </div>
             <div className="card">
                 <img src={porqueTeflonar2} alt="Cargando..." />
                 <h3 className="titulo">¿Teflon gastado?</h3>
-                <p className="text">Si tu vajilla con recubrimiento de teflón está desgastada, puede que estés enfrentando problemas como alimentos que se pegan, una limpieza difícil y, potencialmente, la liberación de partículas no deseadas en tu comida. Al optar por renovar el teflonado, recuperarás las propiedades antiadherentes que hacen que cocinar y limpiar sea más fácil y eficiente.</p>
+                <p className="text">Si tu vajilla con recubrimiento de teflón está desgastada, puede que estés enfrentando problemas como alimentos que se pegan, una limpieza difícil y, potencialmente, la liberación de partículas no deseadas en tu comida.</p>
             </div>
             <div className="card">
                 <img src={porqueTeflonar3} alt="Cargando..." />
@@ -158,7 +159,7 @@ export default function Landing() {
                 <h4 className="subtitulo">Ahorra más del doble en comparación con comprar nuevas...</h4>
                 <div className="precio">
                     <h3>Precio</h3>
-                    <h4 className="GOLD">Desde $70.000 por pieza</h4>
+                    <h4>Desde $70.000 por pieza</h4>
                     <strong>
                         incluye:
                         <ul>
@@ -317,16 +318,28 @@ export default function Landing() {
             <div className="btns">
                 <a href='https://wa.link/r1q5wm' target="_blank" rel="noopener noreferrer" className="btn">
                     <img src={WhatsappIcon} alt="Whatsapp logo" />
-                    <h4>Contactarte por Whatsapp</h4>
+                    <div className="text">
+                        <h4>Contactarte por Whatsapp</h4>
+                    </div>
                 </a>
                 <a href='https://www.instagram.com/a.c.e.a.restauracion/' target="_blank" rel="noopener noreferrer" className="btn">
                 <img src={InstagramIcon} alt="Instagram logo" />
-                    <h4>Contactarte por Instagram</h4>
+                    <div className="text">
+                        <h4>Contactarte por Instagram</h4>
+                    </div>
                 </a>
                 <a href='https://www.facebook.com/pulidosacea/' target="_blank" rel="noopener noreferrer" className="btn">
                 <img src={FacebookIcon} alt="Facebook logo" />
-                    <h4>Contactarte por Facebook</h4>
+                    <div className="text">
+                        <h4>Contactarte por Facebook</h4>
+                    </div>
                 </a>
+                {/* <a href='https://www.facebook.com/pulidosacea/' target="_blank" rel="noopener noreferrer" className="btn">
+                <img src={TwitterIcon} alt="Twitter / x logo" />
+                    <div className="text">
+                        <h4>Contactarte por X</h4>
+                    </div>
+                </a> */}
             </div>
             {/* <Link path="presupuesto">
                 <div className='pedirPresupuesto'>Pedir presupuesto ya!</div>
