@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Icon from '@/utils/Icon'
-import PreguntasFrecuentesCard from './cards/PreguntasFrecuentesCard';
-import Header from '../componenteGenerales/Header';
+import PreguntasFrecuentesCard from '@/Component/cards/PreguntasFrecuentesCard';
+import Header from '@/Component/General/Header';
+import Footer from '@/Component/General/Footer';
 
 import porqueTeflonar1 from '@/imgs/porque-teflonar1.png'
 import porqueTeflonar2 from '@/imgs/porque-teflonar2.png'
@@ -15,7 +16,7 @@ import WhatsappIcon from '@/imgs/whatsappIcon.png'
 import FacebookIcon from '@/imgs/facebookIcon.png'
 import TwitterIcon from '@/imgs/twitterIcon.png'
 
-import './styles/landing.css'
+import '@/styles/landing.css'
 
 export default function Landing() {
 
@@ -52,7 +53,7 @@ export default function Landing() {
                 <div className="box">
                     <p>Restauración</p>
                     
-                    <strong>Menos de <br /> $100.000</strong>
+                    <strong>Menos de <br /> $75.000</strong>
                 </div>
             </div>
             <p className="text">Ahorra más del soble con nuestro servicio de restauración.</p>
@@ -93,12 +94,12 @@ export default function Landing() {
             <div className="card">
                 <img src={porqueTeflonar2} alt="Cargando..." />
                 <h3 className="titulo">¿Teflon gastado?</h3>
-                <p className="text">Si tu vajilla con recubrimiento de teflón está desgastada, puede que estés enfrentando problemas como alimentos que se pegan, una limpieza difícil y, potencialmente, la liberación de partículas no deseadas en tu comida.</p>
+                <p className="text">Si tu vajilla con recubrimiento de antiadhrente está desgastada, puede que estés enfrentando problemas como alimentos que se pegan, una limpieza difícil y, potencialmente, la liberación de partículas no deseadas en tu comida.</p>
             </div>
             <div className="card">
                 <img src={porqueTeflonar3} alt="Cargando..." />
-                <h3 className="titulo">Se desgastó el teflón debido a décadas de uso:</h3>
-                <p className="text">Si utilizas ollas de marcas reconocidas como Essen, Eterna, Fournee, Cucina Donna, Alma Gourmet, entre otras, el reteflonado es la solución ideal para restaurar tus utensilios y dejarlos como nuevos, manteniendo su calidad y prolongando su vida útil.</p>
+                <h3 className="titulo">Se desgastó el antiadhrente debido a décadas de uso:</h3>
+                <p className="text">Si utilizas ollas de marcas reconocidas como Essen, Eterna, Fournee, Cucina Donna, Alma Gourmet, entre otras, el antiadhrente es la solución ideal para restaurar tus utensilios y dejarlos como nuevos, manteniendo su calidad y prolongando su vida útil.</p>
             </div>
         </content>
     </section>
@@ -146,20 +147,20 @@ export default function Landing() {
                 </div>
                 <Icon icon="faAnglesDown"/>
                 <div className="card">
-                    <h4>Nuestro repartidor recoge tus piezas y se paga el 50% como señal.</h4>
+                    <h4>Nuestros repartidores recoge tus piezas.</h4>
                     <p>Una vez que las piezas hayan ingresado a la fábrica, recibirás las piezas restauradas en un plazo de 2 a 3 semanas.</p>
                 </div>
                 <Icon icon="faAnglesDown"/>
                 <div className="card">
                     <h4>Enviamos las piezas restauradas directamente a tu domicilio.</h4>
-                    <p>Realizamos el reteflonado con maestría y precisión industrial. En 15-20 días, devolvemos la olla restaurada a tu puerta. Abonas el 50% restante al recibirla.</p>
+                    <p>Realizamos el antiadhrente con maestría y precisión industrial. En 15-20 días, devolvemos la olla restaurada a tu puerta. Abonas el 50% restante al recibirla.</p>
                 </div>
             </div>
             <div className="info">
                 <h4 className="subtitulo">Ahorra más del doble en comparación con comprar nuevas...</h4>
                 <div className="precio">
                     <h3>Precio</h3>
-                    <h4>Desde $70.000 por pieza</h4>
+                    <h4>Desde $45.000 por pieza</h4>
                     <strong>
                         incluye:
                         <ul>
@@ -173,16 +174,16 @@ export default function Landing() {
                 </div>
                 <div className="cards">
                 <PreguntasFrecuentesCard 
-            question="También tenemos promos a partir de 3 piezas" 
-            content={
-                <p>
-                <ul>
-                    <li>10% de descuento del total a partir de la 3er pieza</li>
-                    <li>20% de descuento del total a partir de la 6er pieza</li>
-                </ul>
-                </p>
-            }
-            />
+                question="También tenemos promos a partir de 3 piezas" 
+                content={
+                    <p>
+                    <ul>
+                        <li>10% de descuento del total a partir de la 3er pieza</li>
+                        <li>20% de descuento del total a partir de la 6er pieza</li>
+                    </ul>
+                    </p>
+                }
+                />
                 </div>
             </div>
         </content>
@@ -203,7 +204,7 @@ export default function Landing() {
             </div>
             <div className="card">
                 <h3>Proceso de Restauración:</h3>
-                <p>Ofrecemos un proceso simple y efectivo: retiramos la pieza con nuestro servicio de reparto, realizamos el reteflonado con precisión industrial y devolvemos la olla restaurada directamente a su hogar en 20-30 días hábiles</p>
+                <p>Ofrecemos un proceso simple y efectivo: retiramos la pieza con nuestro servicio de reparto, realizamos el antiadhrente con precisión industrial y devolvemos la olla restaurada directamente a su hogar en 20-30 días hábiles</p>
             </div>
             <div className="card">
                 <h3>Calidad Inigualable:</h3>
@@ -341,21 +342,12 @@ export default function Landing() {
                     </div>
                 </a> */}
             </div>
-            {/* <Link path="presupuesto">
+            {/* <Link to="Presupuesto">
                 <div className='pedirPresupuesto'>Pedir presupuesto ya!</div>
             </Link> */}
         </div>
     </section>
-    <footer>
-        <div className="licencia">
-            <h3>Pagina oficial de Acea restauraciones</h3>
-            <h4>Todos los derechos reservados 2024©</h4>
-        </div>
-        <div className="devteam">
-            <h3>Desarrolador web: KaselaDev</h3>
-            <a href="http://kasela.com.ar" target="_blank" rel="noopener noreferrer">kasela.com.ar</a>
-        </div>
-    </footer>
+    <Footer />
     </>
   );
 }
