@@ -230,13 +230,7 @@ export default function Landing() {
             question="¿De dónde son?" 
             content={
                 <p>
-                Somos de Hurlingham, Zona Oeste. Trabajamos de manera online y ofrecemos nuestro servicio de Retiro y Envío sin cargo en todo CABA y Gran Buenos Aires.
-                <br />
-                <strong>Nuestras sucursales son:</strong>
-                <ul>
-                    <li>José C Paz</li>
-                    <li>Florencio Varela</li>
-                </ul>
+                Tenemos sucursales en Tortuguitas, Florencio Varela y CABA, realizamos entregas en toda la Ciudad de Buenos Aires (CABA) y el AMBA, sin importar el barrio.
                 </p>
             }
             />
@@ -268,7 +262,7 @@ export default function Landing() {
             question="¿Tiene garantía?" 
             content={
                 <p>
-                Sí, la restauración tiene una garantía de 6 meses. Y sólo es válida si la falla es por parte nuestra.
+                Sí, la restauración tiene una garantía de 12 meses. Y sólo es válida si la falla es por parte nuestra.
                 </p>
             }
             />
